@@ -8,7 +8,6 @@ body{
     font-family: "Be Vietnam Pro", sans-serif;
     font-weight: 400;
     font-style: normal;
-    width: 100%;
     color: #262626;
 }
 .header-container{
@@ -17,7 +16,7 @@ body{
     align-items: center;
     padding: 1.2rem 3.7rem;
     font-size:14px ;
-    /* width: 100%; */
+    width: 100%;
 }
 .nav-container{
     display: flex;
@@ -76,7 +75,6 @@ a{
     text-align: center;
     width:58em;
     /* border: 2px solid red; */
-    height: 4.8em;
     padding-bottom: 10px;
     /* background-color: #fcfcfd; */
     /* margin-left: 6em; */
@@ -153,6 +151,7 @@ strong{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #fcfcfd;
     height: 5em;
     /* border: 2px solid red; */
@@ -162,6 +161,7 @@ strong{
 .app-item{
     width: 12.9em;
     border-left: 1px solid #f7f7f8;
+    background-color: #fcfcfd;
     height: 4em;
     display: flex;
     align-items: center;
@@ -190,9 +190,9 @@ strong{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 92%;
+    width: 100%;
     line-height: 1.5em;
-    padding: 2em 0;
+    padding: 2em ;
 }
 #courses{
     font-size: 1.7em;
@@ -214,8 +214,10 @@ strong{
     align-content: center;
     flex-direction: column;
     height: 100%;
-    width: 92%;
+    width: 100%;
     /* border: 3px solid red; */
+    padding: 0 2em;
+    gap: 1em;
 }
 .benefit-container1, .benefit-container2{
     display: flex;
@@ -223,12 +225,13 @@ strong{
     align-content: center;
     gap: 1em;
     /* border:4px solid #ff9500; */
-    padding-top: 1em;
+    /* flex-wrap: wrap; */
+    /* padding-top: 1em; */
+    width: 100%;
 }
 .benefit-item{
-    width: 20em;
+    width: 100%;
     background-color: #fcfcfd;
-    height: 20em;
     border-radius: 5px;
     flex: 1 1 auto;
 }
@@ -256,15 +259,17 @@ strong{
 }
 .benefit-btn1{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: right;
-    padding: 0 2em 0 0;
+    width: 100%;
+    padding: 0 2em 1.5em 0;
 }
 .benefit-btn11{
     display: flex;
     align-items: center;
     justify-content: right;
-    padding: 0em 1.5em 0 0;
+    width: 100%;
+    padding: 0em 1.5em 1.5em 0;
 }
 .benefit-btn1-0, .benefit-btn1-1{
     border: 1px solid #f1f1f3;
@@ -280,7 +285,9 @@ strong{
     align-content: center;
     flex-direction: column;
     /* height: 100%; */
-    width: 92%;
+    width: 100%;
+    padding: 2em;
+    gap: 1em;
     /* border: 3px solid red; */
 }
 .course-container1, .course-container2, .course-container3{
@@ -289,8 +296,8 @@ strong{
     align-content: center;
     gap: 1em;
     /* border:4px solid #ff9500; */
-    padding-top: 1em;
     width: 100%;
+    /* flex-wrap: wrap; */
 }
 .course-item{
     width: 50%;
@@ -311,6 +318,7 @@ strong{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     /* border: 2px solid green; */
     height: 3em;
     gap: 1em;
@@ -358,7 +366,7 @@ strong{
     align-content: center;
     gap: 1em;
     /* border:4px solid #ff9500; */
-    padding-top: 1em;
+    /* padding-top: 1em; */
     width: 100%;
 }
 .testimony-item{
@@ -451,10 +459,10 @@ strong{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 92%;
+    width: 95%;
     /* border: 3px solid black; */
     background-color: #ffffff;
-    padding: 2em 0;
+    padding: 2em;
     border-radius: 5px;
 }
 .pricing-container1{
@@ -462,7 +470,7 @@ strong{
     justify-content: space-between;
     align-items: center;
     /* border: 2px solid blue; */
-    width: 95%;
+    width: 100%;
     gap: 1em;
 }
 .pricing-item{
@@ -589,7 +597,7 @@ strong{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 92%;
+    width: 95%;
     /* border: 2px solid green; */
     padding: 2em;
     background-color: #ffffff;
@@ -611,8 +619,8 @@ strong{
     justify-content: center;
     align-items: center;
     border: 1px solid #f1f1f3;
-    width: 95%;
-    height: 3em;
+    width: 100%;
+    /* height: 3em; */
     border-radius: 5px;
 }
 .FAQ-item1{
@@ -620,25 +628,26 @@ strong{
     justify-content: center;
     align-items: center;
     border: 1px solid #f1f1f3;
-    width: 95%;
+    width: 100%;
     flex-direction: column;
     gap: 1.2em;
-    padding: 1em 0;
+    padding: 1em;
     border-radius: 5px;
 }
 .FAQ-text1, .FAQ-txt1, .FAQ-subcontainer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1em;
     /* border: 1px solid firebrick; */
-    width: 95%;
+    width: 100%;
 }
 .FAQ-txt1{
     padding-bottom: 1em;
     border-bottom: 1px solid #f1f1f3;
 }
 .FAQ-subcontainer{
-    height: 3em;
+    /* height: 3em; */
     padding: 1em;
     border-radius: 5px;
     background-color: #f1f1f3;
@@ -653,7 +662,7 @@ strong{
 }
 .FAQ-p{
     text-align: left;
-    width: 95%;
+    width: 100%;
     /* border: 2px solid gold; */
     padding: 1em 0;
     color: #4C4C4D;
@@ -690,7 +699,7 @@ strong{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 92%;
+    width: 95%;
 }
 .footer-about{
     display: flex;
@@ -704,7 +713,7 @@ strong{
     align-items: flex-start;
     justify-content: space-between;
     /* border: 2px solid grey; */
-    width: 90%;
+    width: 95%;
     line-height: 1.5em;
 }
 .contact-item{
