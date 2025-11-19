@@ -151,7 +151,7 @@ strong{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     background-color: #fcfcfd;
     height: 5em;
     /* border: 2px solid red; */
