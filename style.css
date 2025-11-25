@@ -9,8 +9,15 @@ body{
     font-weight: 400;
     font-style: normal;
     color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.header-container{
+.body-container{
+    width: 100%;
+}
+.header1{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,6 +25,9 @@ body{
     font-size:14px ;
     width: 100%;
 }
+/* .header1{
+    display: none;
+} */
 .nav-container{
     display: flex;
     justify-content: space-between;
@@ -59,6 +69,9 @@ a{
     color: #ffffff;
     cursor: pointer;
 }
+.menu{
+    display: none;
+}
 /* the next phase */
 .head-container{
     display: flex;
@@ -66,15 +79,25 @@ a{
     align-items: center;
     flex-direction: column;
     padding: 2rem;
+    width: 100%;
     /* width: 58em; */
+    /* border: 2px solid red; */
+}
+.header-text{
+    /* border: 2px solid goldenrod; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .txt-img{
     display: flex;
     align-items: center;
     justify-content: center; 
     text-align: center;
-    width:58em;
-    /* border: 2px solid red; */
+    width:100%;
+    /* border: 2px solid purple; */
     padding-bottom: 10px;
     /* background-color: #fcfcfd; */
     /* margin-left: 6em; */
@@ -86,12 +109,12 @@ a{
     text-align: center;
     width: 40em;
     background-color:#fcfcfd ;
-    height: 3.5em;
+    /* height: 3.5em; */
     gap: 1em;
     border-radius: 5px;
 }
 .txt-header{
-    font-size: 2.3em;
+    font-size: 2.3rem;
     font-weight: 600;
 }
 .img-txt{
@@ -105,9 +128,9 @@ strong{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 58em;
+    width: 100%;
     /* border:3px solid #262626; */
-    height: 4.5em;
+    /* height: 4.5em; */
 }
 .header-h3{
     font-size: 1.6em;
@@ -121,6 +144,7 @@ strong{
     justify-content: center;
     gap: 1em;
     padding-top: 2em;
+    width: 100%;
      /* border:1px solid #ff9500; */
 }
 .btn1{
@@ -158,9 +182,9 @@ strong{
     width: 93%;
     border-radius: 5px;
 }
-.app-item{
+.app-item, .app-item1{
     width: 12.9em;
-    border-left: 1px solid #f7f7f8;
+    border-left: 1.5px solid #f7f7f8;
     background-color: #fcfcfd;
     height: 4em;
     display: flex;
@@ -778,4 +802,264 @@ strong{
 }
 .img2{
     width: 1em;
+}
+
+@media (min-width: 1025px) and (max-width: 1279px) {
+    body{
+        font-size: 14px;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .btn{
+        height: 3.5em;
+    }
+    .head-container{
+        width: 100%;
+    }
+    .text1{
+        width: 40em;
+    }
+    .txt-header{
+        font-size: 2rem;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    body{
+        font-size: 13px;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .btn{
+        height: 3em;
+    }
+    .text1{
+        width: 40em;
+    }
+    .txt-header{
+        font-size: 2.3em;
+    }
+    .sub-container2{
+        font-size: 0.9em;
+    }
+}
+@media (min-width: 480px) and (max-width: 768px){
+    body{
+        font-size: 12.5px;
+    }
+    ul{
+        display: none;
+        /* flex-direction: column; */
+    }
+    .menu-btn{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+    }
+    .menu{
+        display: block;
+    }
+    .header-btn{
+        gap: 1em;
+    }
+    .text1{
+        width: 40em;
+        /* border: 2px solid grey; */
+    }
+    .header-container{
+        width: 120%;
+        gap: 1em;
+    }
+    .head-container, .header-app{
+        width: 120%;
+        /* border: 2px solid rebeccapurple; */
+    }
+    .header-text{
+        width: 100%;
+        /* border: 2px solid firebrick; */
+    }
+    .text1{
+        width: 40em;
+        /* border: 2px solid greenyellow; */
+    }
+    .txt-header{
+        font-size: 1.85em;
+    }
+    .txt-head{
+        width: 100%;
+        /* border: 2px solid ghostwhite; */
+    }
+    .header-h3{
+        font-size: 1.4em;
+    }
+    .app-item{
+        width: 11em;
+    }
+    .main-img{
+        width: 120%;
+    }
+    .img-main{
+        width:95% ;
+    }
+    .benefit-section, .course-section, .testimony, .pricing-section, .FAQ-section, .footer{
+        width: 120%;
+        /* border: 2px solid green; */
+    }
+    .benefit-txt, .course-txt, .testimony-txt{
+        gap: 1em;
+    }
+    .benefit-container, .course-container, .testimony-container{
+        width: 100%;
+        /* border: 2px solid red; */
+    }.benefit-container1, .benefit-container2, .course-container1, .course-container2, .course-container3,
+    .testimony-container1, .testimony-container2, .pricing-container1{
+        flex-wrap: wrap;
+    }
+    .course-item, .testimony-item, .pricing-item{
+        width: 100%;
+    }
+    .img, .img1{
+        width: 15%;
+    }
+    .pricing-txt{
+        flex-direction: column;
+        gap: 1em;
+        justify-content: right;
+        align-items: flex-start;
+    }
+    .FAQ-section1{
+        /* flex-wrap: wrap; */
+        /* border: 2px solid firebrick; */
+        gap: 1em;
+    }
+    /* .FAQ-item, .FAQ-item1{
+        width: 25em;
+        border: 3px solid teal;
+    } */
+    .footer-about1{
+        flex-direction: column;
+        /* border: 2px solid grey; */
+        gap: 1.5em;
+         justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 275px) and (max-width: 479px){
+    body{
+        font-size: 13px;
+    }
+    .header-container{
+        /* width: 200%; */
+        /* border: 2px solid red; */
+        justify-content: center;
+        align-items: center;
+        padding-right: 3em;
+    }
+    .header1{
+        width: 150%;
+        /* border: 2px solid firebrick; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul{
+        display: none;
+        /* flex-direction: column; */
+    }
+    .menu-btn{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+    }
+    .menu{
+        display: block;
+    }
+    .header-btn{
+        gap: 1em;
+    }
+    .text1{
+        width: 40em;
+        /* border: 2px solid grey; */
+    }
+    .header-container{
+        width: 120%;
+        gap: 1em;
+    }
+    .head-container, .header-app{
+        width: 180%;
+        /* border: 2px solid rebeccapurple; */
+    }
+    .header-text{
+        width: 100%;
+        /* border: 2px solid firebrick; */
+    }
+    .text1{
+        width: 40em;
+        /* border: 2px solid greenyellow; */
+    }
+    .txt-header{
+        font-size: 1.85em;
+    }
+    .txt-head{
+        width: 100%;
+        /* border: 2px solid ghostwhite; */
+    }
+    .header-h3{
+        font-size: 1.4em;
+    }
+    .app-item{
+        width: 11em;
+    }
+    .app-item1{
+        display: none;
+    }
+    .main-img{
+        width: 180%;
+    }
+    .img-main{
+        width:95% ;
+    }
+    .benefit-section, .course-section, .testimony, .pricing-section, .FAQ-section, .footer{
+        width: 180%;
+        /* border: 2px solid green; */
+    }
+    .benefit-txt, .course-txt, .testimony-txt{
+        gap: 1em;
+    }
+    .benefit-container, .course-container, .testimony-container{
+        width: 100%;
+        /* border: 2px solid red; */
+    }.benefit-container1, .benefit-container2, .course-container1, .course-container2, .course-container3,
+    .testimony-container1, .testimony-container2, .pricing-container1{
+        flex-wrap: wrap;
+    }
+    .course-item, .testimony-item, .pricing-item{
+        width: 100%;
+    }
+    .img, .img1{
+        width: 15%;
+    }
+    .pricing-txt{
+        flex-direction: column;
+        gap: 1em;
+        justify-content: right;
+        align-items: flex-start;
+    }
+    .FAQ-section1{
+        /* flex-wrap: wrap; */
+        /* border: 2px solid firebrick; */
+        gap: 1em;
+    }
+    /* .FAQ-item, .FAQ-item1{
+        width: 20em;
+        /* border: 3px solid teal; 
+    } */
+    .footer-about1{
+        flex-direction: column;
+        /* border: 2px solid grey; */
+        gap: 1.5em;
+         justify-content: center;
+        align-items: center;
+    }
 }
