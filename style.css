@@ -173,23 +173,29 @@ strong{
 }
 .app-img{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     /* flex-wrap: wrap; */
-    background-color: #fcfcfd;
+    /* background-color: #fcfcfd; */
     height: 5em;
     /* border: 2px solid red; */
     width: 93%;
     border-radius: 5px;
 }
+.app-img1, .app-img2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 .app-item, .app-item1{
-    width: 12.9em;
+    width: 100%;
     border-left: 1.5px solid #f7f7f8;
     background-color: #fcfcfd;
     height: 4em;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 /* main section */
 .main-img{
@@ -224,7 +230,12 @@ strong{
 .benefit-p, .course-p, .testimony-p{
     padding: 1rem 0;
 }
-.benefit-btn, .course-btn, .testimony-btn{
+.benefit-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.benefit-btn0, .course-btn, .testimony-btn{
     width: 5rem;
     height: 2rem;
     background-color: #fcfcfd;
@@ -334,7 +345,9 @@ strong{
     background-color: #fcfcfd;
     border-radius: 10px;
 }
-
+/* .course-img{
+    width: 90%;
+} */
 .course_img{
     width: 100%;
 }
@@ -844,7 +857,7 @@ strong{
 }
 @media (min-width: 480px) and (max-width: 768px){
     body{
-        font-size: 12.5px;
+        font-size: 1em;
     }
     ul{
         display: none;
@@ -892,9 +905,13 @@ strong{
     .header-h3{
         font-size: 1.4em;
     }
-    .app-item{
-        width: 11em;
+    .app-img{
+        flex-direction: column;
+        gap: 1em;
     }
+    /* .app-item, .app-item1{
+        width: 11em;
+    } */
     .main-img{
         width: 120%;
     }
@@ -944,23 +961,24 @@ strong{
         align-items: center;
     }
 }
-@media (min-width: 275px) and (max-width: 479px){
+@media (max-width: 479px){
     body{
-        font-size: 13px;
+        font-size: 0.7em;
     }
     .header-container{
         /* width: 200%; */
         /* border: 2px solid red; */
         justify-content: center;
         align-items: center;
-        padding-right: 3em;
+        padding-right: 2em;
     }
     .header1{
-        width: 150%;
+        /* width: 150%; */
         /* border: 2px solid firebrick; */
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0.5em;
     }
     ul{
         display: none;
@@ -971,74 +989,122 @@ strong{
         justify-content: space-between;
         align-items: center;
         gap: 1em;
+
     }
     .menu{
         display: block;
+        width: 1.5em;
     }
     .header-btn{
         gap: 1em;
     }
+    .btn{
+        height: 3em;
+        width: 6em;
+    }
     .text1{
         width: 40em;
-        /* border: 2px solid grey; */
     }
     .header-container{
-        width: 120%;
         gap: 1em;
     }
     .head-container, .header-app{
-        width: 180%;
+        /* width: 180%; */
         /* border: 2px solid rebeccapurple; */
     }
     .header-text{
         width: 100%;
-        /* border: 2px solid firebrick; */
     }
     .text1{
-        width: 40em;
-        /* border: 2px solid greenyellow; */
+        width:100vw;
     }
     .txt-header{
-        font-size: 1.85em;
+        font-size: 1.55em;
     }
     .txt-head{
         width: 100%;
         /* border: 2px solid ghostwhite; */
     }
     .header-h3{
+        font-size: 0.8em;
+        font-weight: 600;
+        line-height: 1.25em;
+        /* border: 2px solid yellow; */
+    }
+    .header-p{
+        font-size: 12px;
+        line-height: 1.2em;
+        padding-top: 1em;
+    }
+    .header-h3{
         font-size: 1.4em;
     }
-    .app-item{
+    .app-img{
+        flex-direction: column;
+        gap: 1em;
+    }
+    /* .app-item, .app-item1{
         width: 11em;
-    }
-    .app-item1{
+    } */
+    /* .app-item1{
         display: none;
-    }
+    } */
     .main-img{
-        width: 180%;
+        /* width: 180%; */
     }
     .img-main{
         width:95% ;
     }
     .benefit-section, .course-section, .testimony, .pricing-section, .FAQ-section, .footer{
-        width: 180%;
+        width: 100%;
         /* border: 2px solid green; */
     }
     .benefit-txt, .course-txt, .testimony-txt{
         gap: 1em;
+        flex-direction: column;
+        justify-content: right;
+        align-items: flex-start;
     }
     .benefit-container, .course-container, .testimony-container{
         width: 100%;
         /* border: 2px solid red; */
-    }.benefit-container1, .benefit-container2, .course-container1, .course-container2, .course-container3,
+    }
+    .benefit-h4{
+        font-size: 1.5em;
+    }
+    .benefit-container1, .benefit-container2, .course-container1, .course-container2, .course-container3,
     .testimony-container1, .testimony-container2, .pricing-container1{
         flex-wrap: wrap;
     }
     .course-item, .testimony-item, .pricing-item{
-        width: 100%;
+        width: 90vw;
     }
+    /* .course-img{
+        width: 90vw;
+    } */
     .img, .img1{
         width: 15%;
+    }
+    /* .course_text{
+        padding-top: 2em;
+    } */
+    .course-layout{
+        flex-wrap: wrap;
+        gap: 1em;
+        /* border: 2px solid gold; */
+        height: auto;
+        /* width: 90vw; */
+    }
+    .item-img{
+        width: 10vw;
+        /* border: 2px solid black; */
+    }
+    .item_img{
+        width: 9vw;
+    }
+    .container_btn{
+        width: 30vw;
+        font-size: 0.8em;
     }
     .pricing-txt{
         flex-direction: column;
@@ -1046,15 +1112,24 @@ strong{
         justify-content: right;
         align-items: flex-start;
     }
+    .pricing-btn{
+        width: 43vw;
+        /* border: 2px solid red; */
+    }
+    
     .FAQ-section1{
-        /* flex-wrap: wrap; */
+        flex-direction: column;
         /* border: 2px solid firebrick; */
         gap: 1em;
     }
-    /* .FAQ-item, .FAQ-item1{
-        width: 20em;
-        /* border: 3px solid teal; 
-    } */
+    .FAQ-txt{
+        /* border: 2px solid forestgreen; */
+        width: 70vw;
+    }
+    .FAQ-item, .FAQ-item1{
+        width: 70vw;
+        /* /* border: 3px solid teal;  */
+    }
     .footer-about1{
         flex-direction: column;
         /* border: 2px solid grey; */
